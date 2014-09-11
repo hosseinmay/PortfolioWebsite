@@ -1,3 +1,8 @@
 body {
 	margin: 0;
 }
+#main {
+	background-image: url(../images/UW_E5.jpg);
+width: 100%;
+background-size: cover;
+}
