@@ -1,111 +1,170 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+/*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+	font-family: MyriadPro-BoldCond, Lato;
+	src: url('other/MyriadPro-BoldCond.otf') format('otf'),
+		 url('other/MyriadPro-BoldCond.otf') format('opentype');
+}*/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://fonts.gstatic.com/s/lato/v10/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v10/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://fonts.gstatic.com/s/lato/v10/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'MyriadPro-BoldCond';
+  font-style: normal;
+  font-weight: 700;
+  src: url('other/MyriadPro-BoldCond.otf') format('otf');
+}
+
 
 body {
 	margin: 0;
 	background: #FFFFFF;
-	font-family: "Lato";
+	font-family: 'Lato', 'Helvetica';
 }
 
-#background {
-	width: 100%;
-}
-
-
-
-.title-text {
-	z-index: 2;
-	left: 29%;
-	right: 25%;
-	margin-top: 0.5%;
-	text-align: center;
-	position: absolute;
-	font-size: 65px;
-	font-weight: 400;
-	color: #FFFFFF;
-	text-shadow: 1px 1px 4px black;
-}
-
-@media (min-width: 800px) and (max-width: 1150px) {
-	.title-text {
-		font-size: 50px;
-	}	
-}
-
-#experiences {
-	text-align: center
-}
-
-.experience-text {
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 34px;
-	width: 60%;
-	font-weight: 300;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	/*color: #A8A8A8;*/ 
-}
-
-#secret-text {
-	display: none;
-	color: black;
-}
-
-#secret-text a {
+a {
 	text-decoration: none;
-	color: black;
+	font-weight: 700;
+	color: #808080;
+}
+
+a:hover {
+	color: #000000;
+}
+
+span::selection {
+	background-color: #25408F;
+	color: #FFFFFF;
 }
 
 .bold {
 	font-weight: 400;
+	color: #000000;
 }
 
-.bold:hover {
-	color: #A8A8A8;
+#header {
+	width: 100%;
+	height: 500px;
+	background: #25408F;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center
 }
 
-.column {
-	margin-right: 30px;
-	margin-left: 30px;
-	width: 22.5%;
+.title {
+	font-family: 'MyriadPro-BoldCond', 'Lato', 'Helvetica';
+	color: #FFFFFF;
+}
+
+#top.title {
+	text-align: center;
+	padding-top: 12%;
+	font-size: 85px;
+}
+
+#bottom.title {
+	padding-top: 180px;
+	padding-left: 8%;
+	text-align: left;
+	font-size: 45px;
+}
+
+.title-column {
 	display: inline-block;
+	margin-top: 20px;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.icon {
+	height: 50%;
+	width: 50%;
+}
+
+.dot {
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	margin-top: 5%;
+}
+
+#experiences {
+	text-align: center;
+}
+
+.experience-item {
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.divider {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom-style: solid;
+	border-bottom-color: #808080;
+	border-bottom-width: 1px;
 }
 
 .experience-image {
-	border-radius: 10%;
-	width: 69%;
-	height: 69%;
-	background-color: #A8A8A8;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	background-color: #25408F;
 	transition: 0.2s ease-out;
 	-webkit-transition: 0.2s ease-out;
 }
 
-.experience-name {
-	margin-top: 10px;
-	font-size: 28px;
-	font-weight: 700;
-}
-
 .experience-title {
-	margin-top: 8px;
-	font-size: 24px;
+	margin-top: 5%;
+	font-size: 25px;
+	font-weight: 300;
+	text-align: center;
 }
 
-.experience-description {
-	text-align: left;
+.experience-subtitle {
+	color: #9E9E9E;
 	font-size: 20px;
 }
 
-.hoverleft {
-	background-color: #DC0606;
+.left-column {
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 40px;
+	width: 22.5%;
 }
 
-.hovercenter {
-	background-color: #000000;
+.right-column {
+	display: inline-block;
+	text-align: left;
+	margin-left: 40px;
+	margin-right: 45px;
+	width: 50.5%;
+	font-weight: 300;
+	line-height: 150%;
+	font-size: 20px;
+	color: #808080;
 }
 
-.hoverright {
-	background-color: #EB526E;	
+#footer {
+	width: 100%;
+	height: 250px;
+	background: #25408F;
 }
-
-
