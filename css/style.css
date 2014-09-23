@@ -78,7 +78,8 @@ span::selection {
 }
 
 #bottom.title {
-	padding-top: 180px;
+	position: relative;
+	top: 30px;
 	padding-left: 8%;
 	text-align: left;
 	font-size: 45px;
@@ -163,8 +164,24 @@ span::selection {
 	color: #808080;
 }
 
+#and-javascript {
+	display: none;
+	color: #25408F;
+}
+
 #footer {
+	margin-top: 80px;
 	width: 100%;
-	height: 250px;
+	height: 100px;
 	background: #25408F;
+}
+
+#fun-fact {
+	display: none;
+}
+
+#secret-text {
+	display: none;
+	font-size: 20px;
+	color: #FFFFFF;
 }
