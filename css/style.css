@@ -43,16 +43,25 @@ body {
 	font-weight: 300;
 	padding-top: 5%;
 	padding-bottom: 5%;
-	color: #A8A8A8; 
+	/*color: #A8A8A8;*/ 
 }
 
 #secret-text {
 	display: none;
-	font-weight: 400;
+	color: black;
 }
 
 #secret-text a {
 	text-decoration: none;
+	color: black;
+}
+
+.bold {
+	font-weight: 400;
+}
+
+.bold:hover {
+	color: #A8A8A8;
 }
 
 .column {
@@ -63,7 +72,7 @@ body {
 }
 
 .experience-image {
-	border-radius: 52%;
+	border-radius: 10%;
 	width: 69%;
 	height: 69%;
 	background-color: #A8A8A8;
@@ -71,8 +80,20 @@ body {
 	-webkit-transition: 0.2s ease-out;
 }
 
-.experience-description {
+.experience-name {
 	margin-top: 10px;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.experience-title {
+	margin-top: 8px;
+	font-size: 24px;
+}
+
+.experience-description {
+	text-align: left;
+	font-size: 20px;
 }
 
 .hoverleft {
