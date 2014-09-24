@@ -1,5 +1,3 @@
-console.log("Let me know if you see anything that could be improved in the website.  Thanks! - hossein@hosseinmayanloo.com");
-
 // var funfacts = new Array();
 // funfacts[0] = "The woolly mammoth was around when the pyramids were being built.";
 // funfacts[1] = "'Facetiously' contains all 5 vowels and 'y' in alphabetical order.";
@@ -16,7 +14,7 @@ $(document).ready(function(){
 		if($(window).scrollTop() + $(window).height() > $(document).height() - 35) {
 	   		$(window).unbind('scroll');
 	    	// $("#secret-text").delay(2000).fadeIn(1000);
-	    	$("#and-javascript").delay(5000).fadeIn(1000);
+	    	$("#and-javascript").delay(9001).fadeIn(1000);
 		}
 	});
 });
