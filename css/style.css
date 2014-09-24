@@ -88,6 +88,15 @@ span::selection {
 .icon {
 	height: 50%;
 	width: 50%;
+	transition: 0.12s ease-out;
+	-webkit-transition: 0.12s ease-out;
+}
+
+.icon:hover {
+	transform: scale(1.15, 1.15);
+    -moz-transform: scale(1.15, 1.15);
+    -webkit-transform: scale(1.15, 1.15);
+    -o-transform: scale(1.15, 1.15);
 }
 
 .dot {
@@ -182,6 +191,23 @@ span::selection {
 @media (max-width: 910px) {
 	.right-column {
 		margin-top: 40px;
+	}
+}
+
+@media (min-width: 1550px) {
+	#top.title {
+		padding-top: 5%;
+	}
+}
+
+@media (min-width: 1px) and (max-width: 423px) {
+	.left-column {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.right-column {
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 }
 
