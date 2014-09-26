@@ -11,10 +11,10 @@ $(document).ready(function(){
 	// $("#fun-fact").show();
 
 	$(window).scroll(function() {
-		if($(window).scrollTop() + $(window).height() > $(document).height() - 35) {
+		if($(window).scrollTop() + $(window).height() > $(document).height()-25) {
 	   		$(window).unbind('scroll');
 	    	// $("#secret-text").delay(2000).fadeIn(1000);
-	    	$("#and-javascript").delay(9001).fadeIn(1000);
+	    	$("#and-javascript").delay(4102).fadeIn(1000);
 		}
 	});
 });
